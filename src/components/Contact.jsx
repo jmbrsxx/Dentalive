@@ -14,28 +14,28 @@ const Contact = () => {
   return (
     <section id="contact" className={`contact fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={ref}>
       <div className="contact-container">
-        <h2 className="contact-title">Agende sua Consulta</h2>
+        <h2 className="contact-title">Solicite um Orçamento</h2>
         <p className="contact-subtitle">
-          Tire suas dúvidas e marque seu atendimento
+          Fale conosco e agende visita técnica para conserto ou instalação
         </p>
         <div className="contact-wrapper">
           <div className="contact-info">
             <div className="info-item">
-              <span className="info-icon">📍</span>
+              <span className="info-icon"><i className="fas fa-map-marker-alt"></i></span>
               <div>
                 <h4>Endereço</h4>
                 <p>R. Tiradentes, 356 – Centro<br />Canoas – RS<br />Galeria São Luiz</p>
               </div>
             </div>
             <div className="info-item">
-              <span className="info-icon">📞</span>
+              <span className="info-icon"><i className="fas fa-phone"></i></span>
               <div>
                 <h4>Telefone / WhatsApp</h4>
-                <p>(51) 99124-9202</p>
+                <p>(51) 99999-9999</p>
               </div>
             </div>
             <div className="info-item">
-              <span className="info-icon">🕐</span>
+              <span className="info-icon"><i className="fas fa-clock"></i></span>
               <div>
                 <h4>Horário de Funcionamento</h4>
                 <p>Segunda a Sexta<br />Sábado abre às 08:00</p>
@@ -43,12 +43,12 @@ const Contact = () => {
             </div>
             <div className="contact-cta-buttons">
               <a 
-                href="https://wa.me/5551991249202" 
+                href="https://wa.me/5151999999999" 
                 className="cta-btn cta-whatsapp-large"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span>👉</span>
+                <i className="fab fa-whatsapp"></i>
                 Agendar pelo WhatsApp
               </a>
             </div>
@@ -87,11 +87,11 @@ const Contact = () => {
               <label htmlFor="service">Serviço de Interesse</label>
               <select id="service" name="service">
                 <option value="">Selecione um serviço</option>
-                <option value="limpeza">Limpeza Dental</option>
-                <option value="clareamento">Clareamento Dental</option>
-                <option value="canal">Tratamento de Canal</option>
-                <option value="extracao">Extração Dentária</option>
-                <option value="implante">Implante Dentário</option>
+                <option value="vazamento">Reparo de Vazamento</option>
+                <option value="desentupimento">Desentupimento</option>
+                <option value="instalacao">Instalação Hidráulica</option>
+                <option value="manutencao">Manutenção Preventiva</option>
+                <option value="loucas">Troca de Louças e Metais</option>
                 <option value="outro">Outro</option>
               </select>
             </div>
@@ -101,7 +101,7 @@ const Contact = () => {
                 id="message" 
                 name="message" 
                 rows="4" 
-                placeholder="Conte-nos sobre seu problema dental..."
+                placeholder="Conte-nos sobre seu serviço de encanamento..."
               ></textarea>
             </div>
             <button type="submit" className="submit-btn">

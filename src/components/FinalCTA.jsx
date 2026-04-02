@@ -1,7 +1,5 @@
 import React from 'react';
 import './FinalCTA.css';
-import ToothIcon from '../assets/icons/tooth.svg';
-import WhatsAppIcon from '../assets/icons/whatsapp.svg';
 import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const FinalCTA = () => {
@@ -11,15 +9,15 @@ const FinalCTA = () => {
     <section className={`final-cta fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={ref}>
       <div className="final-cta-container">
         <h2 className="final-cta-title">
-          <img src={ToothIcon} alt="" className="cta-tooth-icon" />
-          Cuide do seu sorriso hoje mesmo
+          <i className="fas fa-tools"></i>
+          Solucione seu vazamento hoje mesmo
         </h2>
         <p className="final-cta-subtitle">
-          Agende sua consulta e descubra como é fácil ter um sorriso saudável e bonito
+          Agende uma visita técnica e evite prejuízos com água e infiltrações
         </p>
         <div className="final-cta-buttons">
           <a href="#contact" className="cta-primary">
-            📅 Agendar Consulta
+            <i className="fas fa-calendar-alt"></i> Agendar Consulta
           </a>
           <a 
             href="https://wa.me/5551993111020" 
@@ -27,7 +25,7 @@ const FinalCTA = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={WhatsAppIcon} alt="WhatsApp" className="cta-chat-icon" />
+            <i className="fab fa-whatsapp"></i>
             Falar no WhatsApp
           </a>
         </div>

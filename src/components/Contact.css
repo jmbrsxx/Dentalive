@@ -43,6 +43,7 @@
 .info-icon {
   font-size: 1.8rem;
   flex-shrink: 0;
+  color: #1E88E5;
 }
 
 .info-icon-img {
@@ -163,13 +164,13 @@
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #00b894;
+  border-color: #1E88E5;
 }
 
 .submit-btn {
   width: 100%;
   padding: 1rem;
-  background: #00b894;
+  background: #1E88E5;
   color: white;
   border: none;
   border-radius: 10px;
@@ -180,9 +181,9 @@
 }
 
 .submit-btn:hover {
-  background: #00a085;
+  background: #1565C0;
   transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(0, 184, 148, 0.3);
+  box-shadow: 0 5px 20px rgba(30, 136, 229, 0.3);
 }
 
 .contact-map {

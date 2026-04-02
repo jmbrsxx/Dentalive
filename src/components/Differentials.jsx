@@ -1,34 +1,30 @@
 import React from 'react';
 import './Differentials.css';
 import useScrollAnimation from '../hooks/useScrollAnimation';
-import HeartIcon from '../assets/icons/heart.svg';
-import HomeIcon from '../assets/icons/home.svg';
-import StarIcon from '../assets/icons/sparkle.svg';
-import TrophyIcon from '../assets/icons/trophy.svg';
 
 const Differentials = () => {
   const [ref, isVisible] = useScrollAnimation();
   
   const differentials = [
     {
-      icon: HeartIcon,
-      title: 'Atendimento humanizado',
-      description: 'Cuidamos de cada paciente com atenção e respeito.'
+      icon: 'fas fa-clock',
+      title: 'Atendimento 24h',
+      description: 'Pronto para resolver seu problema a qualquer hora, incluindo emergências.'
     },
     {
-      icon: HomeIcon,
-      title: 'Ambiente moderno e climatizado',
-      description: 'Conforto desde a recepção até o consultório.'
+      icon: 'fas fa-home',
+      title: 'Serviço residencial e comercial',
+      description: 'Atendimento completo para casas, condomínios e empresas.'
     },
     {
-      icon: StarIcon,
-      title: 'Localização estratégica',
-      description: 'Fácil acesso próximo ao trem, ônibus e Uber.'
+      icon: 'fas fa-certificate',
+      title: 'Garantia de qualidade',
+      description: 'Peças e mão de obra garantidas para sua tranquilidade.'
     },
     {
-      icon: TrophyIcon,
-      title: 'Profissionais qualificados',
-      description: 'Equipe preparada para oferecer tratamentos de qualidade.'
+      icon: 'fas fa-star',
+      title: 'Equipe experiente',
+      description: 'Profissionais certificados e com anos de experiência em hidráulica.'
     }
   ];
 
@@ -37,13 +33,13 @@ const Differentials = () => {
       <div className="differentials-container">
         <h2 className="differentials-title">Nossos Diferenciais</h2>
         <p className="differentials-subtitle">
-          O que nos diferencia no atendimento odontológico
+          O que nos diferencia nos serviços de encanamento
         </p>
         <div className="differentials-grid">
           {differentials.map((item, index) => (
             <div key={index} className={`differential-card fade-in-section delay-${index + 1} ${isVisible ? 'is-visible' : ''}`}>
               <div className="differential-icon">
-                <img src={item.icon} alt={item.title} />
+                <i className={item.icon}></i>
               </div>
               <h3 className="differential-title">{item.title}</h3>
               <p className="differential-description">{item.description}</p>

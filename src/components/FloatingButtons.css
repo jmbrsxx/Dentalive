@@ -19,10 +19,12 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   animation: pulse 2s infinite;
+  color: white;
+  font-size: 24px;
 }
 
-.floating-btn .btn-icon {
-  font-size: 1.8rem;
+.floating-btn i {
+  font-size: 24px;
 }
 
 .floating-btn-icon {
@@ -31,41 +33,41 @@
 }
 
 .whatsapp-btn {
-  background: #25d366;
+  background: #0D47A1;
   transition: background 0.3s ease;
 }
 
 .whatsapp-btn:hover {
-  background: #ffffff;
+  background: #1565C0;
   transform: scale(1.1);
 }
 
-.whatsapp-btn .floating-btn-icon {
-  filter: brightness(0) invert(1);
-}
-
-.whatsapp-btn:hover .floating-btn-icon {
-  filter: none;
+.whatsapp-btn i {
+  color: white;
 }
 
 .call-btn {
-  background: #00b894;
+  background: #0D47A1;
 }
 
 .call-btn:hover {
-  background: #00a085;
+  background: #1565C0;
   transform: scale(1.1);
+}
+
+.call-btn i {
+  color: white;
 }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    box-shadow: 0 0 0 0 rgba(13, 71, 161, 0.5);
   }
   70% {
-    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    box-shadow: 0 0 0 15px rgba(13, 71, 161, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    box-shadow: 0 0 0 0 rgba(13, 71, 161, 0);
   }
 }
 

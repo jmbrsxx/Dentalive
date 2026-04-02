@@ -40,7 +40,7 @@
 .rating-value {
   font-size: 2rem;
   font-weight: 800;
-  color: #00b894;
+  color: #1E88E5;
 }
 
 .rating-count {
@@ -67,7 +67,7 @@
 .testimonial-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  border-color: #00b894;
+  border-color: #1E88E5;
 }
 
 .testimonial-rating {
@@ -85,7 +85,7 @@
 }
 
 .testimonial-name {
-  color: #00b894;
+  color: #1E88E5;
   font-weight: 600;
   font-size: 0.95rem;
 }
@@ -109,8 +109,8 @@
 }
 
 .google-review-btn:hover {
-  border-color: #00b894;
-  color: #00b894;
+  border-color: #1E88E5;
+  color: #1E88E5;
 }
 
 @media (max-width: 768px) {

@@ -1,52 +1,46 @@
 import React from 'react';
 import './Services.css';
 import useScrollAnimation from '../hooks/useScrollAnimation';
-import ToothIcon from '../assets/icons/tooth.svg';
-import SparkleIcon from '../assets/icons/sparkle.svg';
-import ToolIcon from '../assets/icons/tool.svg';
-import BoneIcon from '../assets/icons/bone.svg';
-import DiamondIcon from '../assets/icons/diamond.svg';
-import ElderlyIcon from '../assets/icons/elderly.svg';
 
 const Services = () => {
   const [ref, isVisible] = useScrollAnimation();
 
   const services = [
     {
-      icon: ToothIcon,
-      title: 'Limpeza Dental',
-      description: 'Remove placa bacteriana e tártaro para manter seus dentes saudáveis e gengivas em bom estado.',
+      icon: 'fas fa-wrench',
+      title: 'Reparo de Vazamentos',
+      description: 'Conserto rápido e definitivo de vazamentos em tubulações, registros e conexões.',
       button: 'Saiba mais'
     },
     {
-      icon: SparkleIcon,
-      title: 'Clareamento Dental',
-      description: 'Deixe seu sorriso mais branco e brilhante com técnicas seguras e eficientes.',
+      icon: 'fas fa-ban',
+      title: 'Desentupimento',
+      description: 'Desobstrução de pias, ralos, vasos sanitários e caixas de gordura com garantia.',
       button: 'Saiba mais'
     },
     {
-      icon: ToolIcon,
-      title: 'Tratamento de Canal',
-      description: 'Salve dentes comprometidas com procedimentos modernos e sem dor.',
+      icon: 'fas fa-shower',
+      title: 'Instalação Hidráulica',
+      description: 'Montagem de sistemas de água fria e quente para residências e comércios.',
       button: 'Saiba mais'
     },
     {
-      icon: BoneIcon,
-      title: 'Extração Dentária',
-      description: 'Procedimentos seguros e indolores para remoção de dentes com segurança.',
+      icon: 'fas fa-home',
+      title: 'Manutenção Preventiva',
+      description: 'Inspeção completa com troca de peças desgastadas para evitar emergências.',
       button: 'Saiba mais'
     },
     {
-      icon: DiamondIcon,
-      title: 'Implantes Dentários',
-      description: 'Recupere a função e estética dos dentes perdidos com implantes de qualidade.',
+      icon: 'fas fa-faucet',
+      title: 'Troca de Louças e Metais',
+      description: 'Substituição de torneiras, chuveiros, pias e válvulas com serviço limpo e rápido.',
       button: 'Saiba mais'
     },
     {
-      icon: ElderlyIcon,
-      title: 'Atendimento para Idosos',
-      description: 'Carecimento especial e adaptado para pacientes da terceira idade.',
-      button: 'Saiba mais'
+      icon: 'fas fa-phone',
+      title: 'Atendimento 24h',
+      description: 'Atendimento de emergência a qualquer hora, todos os dias da semana.',
+      button: 'Chamar agora'
     }
   ];
 
@@ -55,13 +49,13 @@ const Services = () => {
       <div className="services-container">
         <h2 className="services-title">Nossos Serviços</h2>
         <p className="services-subtitle">
-          Tratamentos odontológicos completos para toda a família
+          Soluções de encanamento confiáveis para sua casa ou empresa
         </p>
         <div className="services-grid">
           {services.map((service, index) => (
             <div key={index} className={`service-card fade-in-section delay-${index + 1} ${isVisible ? 'is-visible' : ''}`}>
               <div className="service-icon">
-                <img src={service.icon} alt={service.title} />
+                <i className={service.icon}></i>
               </div>
               <h3 className="service-title">{service.title}</h3>
               <p className="service-description">{service.description}</p>

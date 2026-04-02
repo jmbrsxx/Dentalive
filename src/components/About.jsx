@@ -10,35 +10,36 @@ const About = () => {
       <div className="about-container">
         <div className="about-image">
           <div className="about-image-placeholder">
-            <img 
-              src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=500&h=600&fit=crop" 
-              alt="Dentista Profissional NovaOdonto" 
-              className="about-dentist-img" 
+            <img
+              src="https://tubocanodesentupidora.com.br/wp-content/uploads/2024/06/Servico-de-encanador-Orcamento-4.jpeg"
+              alt="Encanador profissional em serviço"
+              className="about-dentist-img"
+              onError={(e) => e.target.style.display = 'none'}
             />
           </div>
         </div>
         <div className="about-content">
-          <h2 className="about-title">Conheça a Clínica DentaLive</h2>
+          <h2 className="about-title">Conheça a EncanadorFix</h2>
           <p className="about-text">
-            A <strong>Clínica DentaLive</strong> foi criada para oferecer um atendimento odontológico de qualidade, com conforto e atenção a cada paciente.
+            A <strong>EncanadorFix</strong> foi criada para oferecer serviço de encanamento de alta qualidade, com rapidez e atenção a cada cliente.
           </p>
           <p className="about-text">
-            Localizada no centro de Canoas, dentro da Galeria São Luiz, a clínica conta com um espaço moderno, totalmente climatizado e preparado para proporcionar uma experiência tranquila e segura.
+            Atendemos residências e empresas em Canoas e região, com ferramentas modernas e reparos duráveis para vazamentos, entupimentos e instalações.
           </p>
           <p className="about-text">
-            Nossa equipe é formada por profissionais dedicados, que trabalham com cuidado, tecnologia e atendimento humanizado.
+            Nossa equipe é formada por profissionais experientes, que trabalham com transparência, rapidez e foco na solução efetiva.
           </p>
           <div className="about-features">
             <div className="feature-item">
-              <span className="feature-check">✓</span>
-              <span>Atendimento humanizado</span>
+              <span className="feature-check"><i className="fas fa-check"></i></span>
+              <span>Equipe certificada</span>
             </div>
             <div className="feature-item">
-              <span className="feature-check">✓</span>
-              <span>Ambiente moderno e climatizado</span>
+              <span className="feature-check"><i className="fas fa-check"></i></span>
+              <span>Ferramentas profissionais</span>
             </div>
             <div className="feature-item">
-              <span className="feature-check">✓</span>
+              <span className="feature-check"><i className="fas fa-check"></i></span>
               <span>Localização estratégica</span>
             </div>
           </div>

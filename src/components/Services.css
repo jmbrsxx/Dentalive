@@ -41,18 +41,14 @@
 
 .service-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(0, 184, 148, 0.15);
-  border-color: #00b894;
+  box-shadow: 0 15px 40px rgba(30, 136, 229, 0.15);
+  border-color: #1E88E5;
 }
 
 .service-icon {
   font-size: 3.5rem;
   margin-bottom: 1rem;
-}
-
-.service-icon img {
-  width: 64px;
-  height: 64px;
+  color: #1E88E5;
 }
 
 .service-title {
@@ -72,7 +68,7 @@
 .service-btn {
   display: inline-block;
   padding: 0.7rem 1.5rem;
-  background: #00b894;
+  background: #1E88E5;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -82,7 +78,7 @@
 }
 
 .service-btn:hover {
-  background: #00a085;
+  background: #1565C0;
 }
 
 @media (max-width: 768px) {

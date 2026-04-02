@@ -7,18 +7,18 @@ const Testimonials = () => {
   
   const testimonials = [
     {
-      name: 'João Vitor Da Silva Elsem',
-      text: 'Atendimento incrível, a Dra Lisandra teve o maior cuidado comigo, e bem simpática. O estabelecimento é incrível, recepção perfeita.',
+      name: 'João Vitor',
+      text: 'Atendimento rápido e eficaz. Resolveram meu vazamento em menos de 30 minutos.',
       rating: 5
     },
     {
-      name: 'Ionara Io',
-      text: 'Experiência excelente! Desde a recepção até o consultório fui muito bem tratada. Ambiente muito limpo e moderno.',
+      name: 'Maria Silva',
+      text: 'Profissionais educados e serviço excelente. Recomendamos para toda a família.',
       rating: 5
     },
     {
       name: 'Diogo Alves',
-      text: 'Ótima experiência. Atendimento com atenção e qualidade.',
+      text: 'Muito satisfeito com a instalação do chuveiro e a manutenção geral da casa.',
       rating: 5
     }
   ];
@@ -26,12 +26,12 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className={`testimonials fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={ref}>
       <div className="testimonials-container">
-        <h2 className="testimonials-title">O que nossos pacientes dizem</h2>
+        <h2 className="testimonials-title">O que nossos clientes dizem</h2>
         <p className="testimonials-subtitle">
-          Avaliações reais de quem confia no nosso trabalho
+          Avaliações reais de quem confia no nosso serviço de encanamento
         </p>
         <div className="testimonials-rating">
-          <span className="rating-stars">⭐⭐⭐⭐⭐</span>
+          <span className="rating-stars"><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></span>
           <span className="rating-value">5,0</span>
           <span className="rating-count">44 avaliações</span>
         </div>
@@ -39,7 +39,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div key={index} className={`testimonial-card fade-in-section delay-${index + 1} ${isVisible ? 'is-visible' : ''}`}>
               <div className="testimonial-rating">
-                {'⭐'.repeat(testimonial.rating)}
+                {[...Array(testimonial.rating)].map((_, i) => <i key={i} className="fas fa-star"></i>)}
               </div>
               <p className="testimonial-text">"{testimonial.text}"</p>
               <p className="testimonial-name">- {testimonial.name}</p>
@@ -53,7 +53,7 @@ const Testimonials = () => {
             rel="noopener noreferrer"
             className="google-review-btn"
           >
-            ⭐ Ver mais avaliações no Google
+            <i className="fas fa-star"></i> Ver mais avaliações no Google
           </a>
         </div>
       </div>

@@ -21,16 +21,15 @@
 .nav-logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #667eea;
+  color: #1E88E5;
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.nav-logo-icon {
-  width: 32px;
-  height: 32px;
+.nav-logo i {
+  font-size: 1.8rem;
 }
 
 .nav-menu {
@@ -50,11 +49,11 @@
 }
 
 .nav-menu a:hover {
-  color: #667eea;
+  color: #1E88E5;
 }
 
 .nav-cta {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1E88E5 0%, #0D47A1 100%);
   color: white !important;
   padding: 0.7rem 1.5rem;
   border-radius: 50px;
@@ -63,7 +62,7 @@
 
 .nav-cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 5px 20px rgba(30, 136, 229, 0.3);
 }
 
 @media (max-width: 768px) {

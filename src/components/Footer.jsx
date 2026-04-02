@@ -7,17 +7,17 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-brand">
-          <h3 className="footer-logo">Clínica DentaLive</h3>
+          <h3 className="footer-logo">EncanadorFix</h3>
           <p className="footer-tagline">
-            Atendimento odontológico moderno e humanizado em Canoas.
+            Serviço de encanador rápido e confiável em Canoas.
           </p>
           <div className="footer-contact">
-            <p>📍 Canoas – RS</p>
-            <p>📞 (51) 99124-9202</p>
+            <p><i className="fas fa-map-marker-alt"></i> Canoas – RS</p>
+            <p><i className="fas fa-phone"></i> (51) 99999-9999</p>
           </div>
           <div className="footer-social">
             <a 
-              href="https://wa.me/5551991249202" 
+              href="https://wa.me/5151999999999" 
               target="_blank" 
               rel="noopener noreferrer"
               title="WhatsApp"
@@ -25,12 +25,12 @@ const Footer = () => {
               <img src={WhatsAppIcon} alt="WhatsApp" />
             </a>
             <a 
-              href="https://instagram.com/dentalive" 
+              href="https://instagram.com/encanadorfix" 
               target="_blank" 
               rel="noopener noreferrer"
               title="Instagram"
             >
-              📷
+              <i className="fab fa-instagram"></i>
             </a>
             <a 
               href="https://maps.google.com/?q=R.+Tiradentes+356+Canoas+RS" 
@@ -38,7 +38,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               title="Google Maps"
             >
-              📍
+              <i className="fas fa-map-location-dot"></i>
             </a>
           </div>
         </div>
@@ -54,14 +54,14 @@ const Footer = () => {
         <div className="footer-services">
           <h4>Contato</h4>
           <ul>
-            <li><a href="https://wa.me/5551991249202">WhatsApp</a></li>
-            <li><a href="https://instagram.com/dentalive">Instagram</a></li>
+            <li><a href="https://wa.me/5151999999999">WhatsApp</a></li>
+            <li><a href="https://instagram.com/encanadorfix">Instagram</a></li>
             <li><a href="https://maps.google.com/?q=R.+Tiradentes+356+Canoas+RS">Google Maps</a></li>
           </ul>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Clínica DentaLive. Todos os direitos reservados.</p>
+        <p>© {new Date().getFullYear()} EncanadorFix. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
